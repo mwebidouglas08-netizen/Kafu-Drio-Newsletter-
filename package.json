@@ -1,0 +1,14 @@
+{
+  "name": "kafu-drio-newsletter",
+  "version": "1.0.0",
+  "description": "KAFU Directorate of Research, Innovation and Outreach — Newsletter Issue 1, May 2026",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public -p 3000",
+    "build": "echo 'Static site — no build step required'",
+    "start": "npx serve public -p 3000"
+  },
+  "keywords": ["kafu", "newsletter", "research", "innovation", "kenya"],
+  "author": "Daggy Techs for KAFU DRIO",
+  "license": "UNLICENSED"
+}
