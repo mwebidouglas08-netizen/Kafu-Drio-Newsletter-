@@ -13,17 +13,14 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════
-     COVER PAGE
-══════════════════════════════════════════ -->
+<!-- ══════════════ COVER ══════════════ -->
 <section class="cover" id="top">
   <div class="cover-bg" style="background-image:url('/images/hero.jpg')"></div>
   <div class="cover-noise"></div>
   <div class="cover-fade"></div>
-
   <header class="cover-topbar">
     <div class="cover-brand">
-      <img src="/images/logo.png" alt="Kaimosi Friends University" width="64" height="64"/>
+      <img src="/images/logo.png" alt="Kaimosi Friends University Logo" width="64" height="64"/>
       <div>
         <p class="uni-name">Kaimosi Friends University</p>
         <p class="uni-sub">KAFU · Est. 2013</p>
@@ -34,7 +31,6 @@
       <span class="issue-date">May 2026</span>
     </div>
   </header>
-
   <div class="cover-content">
     <div class="cover-eyebrow">
       <span class="ey-line"></span>
@@ -42,7 +38,7 @@
       <span class="ey-line"></span>
     </div>
     <h1 class="cover-title">Research<br/><em>&amp; Innovation</em><br/>Review</h1>
-    <p class="cover-desc">A reflection on KAFU's research milestones, breakthrough innovations, national awards and the bold ideas shaping our community's future — January to December 2025.</p>
+    <p class="cover-desc">A Publication from the Directorate of Research, Innovation and Outreach — A reflection on KAFU's research milestones, breakthrough innovations, national awards and the bold ideas shaping our community's future, January to December 2025.</p>
     <div class="cover-stats">
       <div class="cs-item"><span class="cs-n" data-target="35">0</span><span class="cs-l">Peer-Reviewed<br/>Publications</span></div>
       <div class="cs-item"><span class="cs-n" data-target="100" data-suffix="M">0</span><span class="cs-l">KES Grant<br/>Approved</span></div>
@@ -53,7 +49,7 @@
   <div class="cover-scroll"><span>Scroll</span><span class="sc-line"></span></div>
 </section>
 
-<!-- NAV -->
+<!-- STICKY NAV -->
 <nav class="site-nav" id="site-nav">
   <div class="nav-links">
     <a href="#leadership" class="nl">Leadership</a>
@@ -68,9 +64,7 @@
     <a href="#students"   class="nl">Students</a>
     <a href="#outlook"    class="nl">Outlook</a>
   </div>
-  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-mobile" id="nav-mobile">
     <a href="#leadership">01 · Leadership Messages</a>
     <a href="#mandate">02 · Mandate &amp; Goals</a>
@@ -90,20 +84,39 @@
 
 <!-- ══════════════════════════════════════════
      01 · LEADERSHIP MESSAGES
-     Images: portrait-amimo.jpg beside DVC text
-             portrait-shikuku.jpg beside Director text
+     Doc order: image4.jpeg beside DVC text | image5.jpeg beside Director text
+     NEW: VC message with portrait-vc.jpg added first
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="leadership">
   <div class="wrap">
     <div class="sec-label"><span class="sn">01</span><span class="sl"></span><span class="sk">Leadership Messages</span></div>
     <h2 class="sh">A Word from Our Leaders</h2>
-    <p class="sd">Reflections from the University's academic and research leadership on KAFU's 2025 journey.</p>
+    <p class="sd">Reflections from the University's Vice Chancellor and research leadership on KAFU's 2025 journey.</p>
+
+    <!-- VC MESSAGE — added per instruction, portrait-vc.jpg -->
+    <article class="leader-card rv" style="margin-bottom:2rem;">
+      <div class="lc-stripe"></div>
+      <div class="lc-top">
+        <img src="/images/portrait-vc.jpg" alt="Prof. Peter Mwita, Vice Chancellor, KAFU" class="lc-portrait" loading="lazy"/>
+        <div class="lc-info">
+          <h3>Prof. Peter Mwita</h3>
+          <p class="lc-role">Vice Chancellor</p>
+          <p class="lc-dept">Kaimosi Friends University</p>
+        </div>
+      </div>
+      <div class="lc-body">
+        <span class="lc-q">"</span>
+        <p>The year 2025 has been a defining period for research, innovation and outreach at Kaimosi Friends University. Through the Directorate of Research, Innovation and Outreach (DRIO), the University has continued to strengthen research governance, expand partnerships, and enhance its visibility and competitiveness at national, regional and international levels.</p>
+        <p style="margin-top:0.75rem;">This annual DRIO Newsletter highlights our mandate, key activities undertaken between January and December 2025, major achievements, and our strategic outlook for 2026. I commend our staff, students and partners for their dedication and contribution to the growth of KAFU as a research-driven institution.</p>
+      </div>
+    </article>
 
     <div class="leaders-grid">
+      <!-- DVC MESSAGE — image4.jpeg appears inline with this text in the document -->
       <article class="leader-card rv">
         <div class="lc-stripe"></div>
         <div class="lc-top">
-          <img src="/images/portrait-amimo.jpg" alt="Prof. Fred Amimo" class="lc-portrait" loading="lazy"/>
+          <img src="/images/portrait-amimo.jpg" alt="Prof. Fred Amimo, Deputy Vice Chancellor" class="lc-portrait" loading="lazy"/>
           <div class="lc-info">
             <h3>Prof. Fred Amimo</h3>
             <p class="lc-role">Deputy Vice Chancellor</p>
@@ -116,10 +129,11 @@
         </div>
       </article>
 
+      <!-- DIRECTOR MESSAGE — image5.jpeg -->
       <article class="leader-card rv rv1">
         <div class="lc-stripe"></div>
         <div class="lc-top">
-          <img src="/images/portrait-shikuku.jpg" alt="Dr. Victor Shikuku, AMRSC" class="lc-portrait" loading="lazy"/>
+          <img src="/images/portrait-shikuku.jpg" alt="Dr. Victor Shikuku, AMRSC — Director DRIO" class="lc-portrait" loading="lazy"/>
           <div class="lc-info">
             <h3>Dr. Victor Shikuku, AMRSC</h3>
             <p class="lc-role">Director, Research, Innovation &amp; Outreach</p>
@@ -137,23 +151,18 @@
 
 <!-- ══════════════════════════════════════════
      02 · DRIO MANDATE & GOALS
-     Images: mandate-event.jpg + mandate-icon.png (floated in mandate section)
-             goals-event.jpg (in goals column)
+     Doc: image6.jpeg + image7.png appear WITH "DRIO Mandate" heading
+          image8.jpeg appears WITH "Increase success rates" under Goals
 ══════════════════════════════════════════ -->
 <section class="sec sec-cream" id="mandate">
   <div class="wrap">
     <div class="sec-label"><span class="sn">02</span><span class="sl"></span><span class="sk">Our Direction</span></div>
     <h2 class="sh">DRIO Mandate &amp; Strategic Goals</h2>
-    <p class="sd">DRIO is driven by a focused set of objectives that cultivate a strong research culture, stimulate innovation and expand opportunities for collaboration and funding — positioning KAFU as a hub of knowledge generation and practical solutions to emerging societal challenges.</p>
+    <p class="sd">DRIO is driven by a focused set of objectives that aim to cultivate a strong research culture, stimulate innovation and expand opportunities for collaboration and funding — positioning KAFU as a hub of knowledge generation and practical solutions to emerging societal challenges.</p>
 
-    <!-- Event photo spanning full width before columns -->
-    <div class="mandate-photo-row rv">
-      <img src="/images/mandate-event.jpg" alt="KAFU research and community engagement event" loading="lazy"/>
-      <img src="/images/goals-event.jpg"   alt="KAFU academic event" loading="lazy"/>
-    </div>
-
-    <div class="two-col-blocks">
-      <div class="tcb rv">
+    <!-- MANDATE block — image6.jpeg + image7.png appear here in document -->
+    <div class="mandate-wrap rv">
+      <div class="mandate-text-col">
         <div class="tcb-head"><span>📋</span><h3>DRIO Mandate</h3></div>
         <ul class="check-list">
           <li>Coordinate, regulate and support research activities across all Schools</li>
@@ -164,7 +173,16 @@
           <li>Ensure compliance with research ethics, biosafety and integrity standards</li>
         </ul>
       </div>
-      <div class="tcb rv rv1">
+      <!-- image6.jpeg (group event) + image7.png (small icon) placed beside mandate as in doc -->
+      <div class="mandate-img-col">
+        <img src="/images/mandate-event.jpg" alt="KAFU research and community engagement event" class="mandate-main-img" loading="lazy"/>
+        <img src="/images/mandate-icon.png"  alt="" aria-hidden="true" class="mandate-icon-img" loading="lazy"/>
+      </div>
+    </div>
+
+    <!-- GOALS block — image8.jpeg appears alongside goals list in document -->
+    <div class="goals-wrap rv">
+      <div class="goals-text-col">
         <div class="tcb-head"><span>🚀</span><h3>Goals 2025–2027</h3></div>
         <ul class="check-list">
           <li>Enhance the quality and quantity of research outputs</li>
@@ -175,53 +193,62 @@
           <li>Build research capacity among staff and postgraduate students</li>
         </ul>
       </div>
+      <!-- image8.jpeg appears here in document alongside goals -->
+      <div class="goals-img-col">
+        <img src="/images/goals-event.jpg" alt="KAFU academic goals and development event" loading="lazy"/>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      03 · KEY ACTIVITIES
-     Images: grants-event.jpg in grant partnerships
+     Doc: image9.jpeg appears under "Grant Development" paragraph
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="activities">
   <div class="wrap">
     <div class="sec-label"><span class="sn">03</span><span class="sl"></span><span class="sk">Key Activities</span></div>
     <h2 class="sh">Key Activities Undertaken<br/>January – December 2025</h2>
-    <p class="sd">Throughout 2025, DRIO implemented wide-ranging strategic activities aimed at strengthening research capacity, advancing innovation and deepening community engagement — reflecting the Directorate's commitment to fostering a vibrant research ecosystem.</p>
+    <p class="sd">Throughout the period January–December 2025, DRIO implemented a wide range of strategic activities aimed at strengthening research capacity, advancing innovation and deepening community engagement — reflecting the Directorate's commitment to fostering a vibrant research ecosystem.</p>
 
-    <div class="act-grid">
-      <div class="act-card rv">
-        <span class="ac-bg">01</span>
-        <span class="ac-ico">🔬</span>
-        <h3>Research Governance &amp; Capacity Building</h3>
-        <p class="ac-sub">DRIO focused on strengthening research governance and building institutional capacity as key pillars for advancing high-quality, ethical and impactful research.</p>
-        <ul>
+    <!-- Research Governance -->
+    <div class="activity-block rv">
+      <div class="ab-marker"><span class="ab-num">01</span></div>
+      <div class="ab-content">
+        <h3>🔬 Research Governance &amp; Capacity Building</h3>
+        <p>DRIO focused on strengthening research governance and building institutional capacity as key pillars for advancing high-quality, ethical and impactful research.</p>
+        <ul class="act-list">
           <li>Proposal development clinics and grant-writing workshops</li>
           <li>Research ethics, integrity and biosafety training</li>
           <li>Mentorship of early-career researchers and postgraduate students</li>
           <li>Coordination of institutional research approvals and reporting</li>
         </ul>
       </div>
+    </div>
 
-      <div class="act-card rv rv1">
-        <span class="ac-bg">02</span>
-        <span class="ac-ico">🤝</span>
-        <h3>Grant Development &amp; Partnerships</h3>
-        <p class="ac-sub">Through proactive identification of funding opportunities and cultivation of linkages with government, industry and international partners, DRIO expanded the University's research portfolio and resource base.</p>
-        <ul>
-          <li>Proposals to National Treasury, ESSA, TWAS and Alexander von Humboldt Foundation</li>
+    <!-- Grant Development — image9.jpeg appears HERE in the document -->
+    <div class="activity-block rv">
+      <div class="ab-marker"><span class="ab-num">02</span></div>
+      <div class="ab-content">
+        <h3>🤝 Grant Development &amp; Partnerships</h3>
+        <p>Through proactive identification of funding opportunities, capacity building in proposal development and the cultivation of linkages with government, industry and international partners, DRIO expanded the University's research portfolio and resource base.</p>
+        <!-- image9.jpeg placed here, right after the paragraph, as in document -->
+        <img src="/images/grants-event.jpg" alt="KAFU grant development partnerships and funding event" class="ab-inline-img" loading="lazy"/>
+        <ul class="act-list">
+          <li>Support for proposal submissions to National Treasury, ESSA, TWAS, Alexander von Humboldt and other funding agencies</li>
           <li>Facilitation of inter-institutional collaborations</li>
           <li>Engagement with county government, industry and development partners</li>
         </ul>
-        <img src="/images/grants-event.jpg" alt="KAFU grant development and partnerships event" class="ac-img" loading="lazy"/>
       </div>
+    </div>
 
-      <div class="act-card rv rv2">
-        <span class="ac-bg">03</span>
-        <span class="ac-ico">💡</span>
-        <h3>Innovation &amp; Outreach</h3>
-        <p class="ac-sub">DRIO advanced its mandate by strengthening innovation systems and expanding outreach activities aimed at translating knowledge into practical solutions.</p>
-        <ul>
+    <!-- Innovation & Outreach -->
+    <div class="activity-block rv">
+      <div class="ab-marker"><span class="ab-num">03</span></div>
+      <div class="ab-content">
+        <h3>💡 Innovation &amp; Outreach</h3>
+        <p>DRIO advanced its mandate by strengthening innovation systems and expanding outreach activities aimed at translating knowledge into practical solutions and meaningful community impact.</p>
+        <ul class="act-list">
           <li>Support for innovation and intellectual property protection initiatives</li>
           <li>Coordination of community outreach and impact-driven research</li>
           <li>Sensitisation on innovation disclosure and commercialisation</li>
@@ -233,10 +260,13 @@
 
 <!-- ══════════════════════════════════════════
      04 · RESEARCH PERFORMANCE HIGHLIGHTS
-     Images: pubs-event.jpg + pubs-icon.png (beside citation text)
-             chart-icon.png + chart-bar.png (bar chart full width)
-             chart2.png + chart2-icon.png (alongside pie)
-             chart-pie.png (pie chart - at start of grants intro)
+     Doc order:
+       image10.jpeg + image11.png → appear together (pubs section)
+       image12.png + image14.png → appear together (bar chart section)
+       text about graph analysis
+       image15.png + image16.png → appear together (second chart)
+       text about pie chart (56.2% Shikuku etc.)
+       [pie chart image17.png appears at START of GRANTS section]
 ══════════════════════════════════════════ -->
 <section class="sec sec-cream" id="performance">
   <div class="wrap">
@@ -244,77 +274,91 @@
     <h2 class="sh">Research Performance<br/>Highlights 2025</h2>
     <p class="sd">The year under review recorded measurable growth in research productivity, visibility, innovation and external engagement. Guided by DRIO, KAFU researchers actively disseminated findings, competed for funding, protected innovations and strengthened collaborations at national and international levels.</p>
 
-    <h3 class="sub-h rv">Publications &amp; Citation Visibility</h3>
+    <h3 class="sub-h">Publications &amp; Citation Visibility</h3>
     <p class="body-p rv">DRIO continued to strengthen the University's scholarly output and global research visibility through enhanced support for publications and citation impact. Efforts were directed toward encouraging high-quality research dissemination in peer-reviewed journals, improving research writing capacity among staff and students, and promoting visibility on international academic platforms.</p>
 
-    <!-- Photo + icon row from document (image10 + image11) -->
-    <div class="pubs-media rv">
-      <img src="/images/pubs-event.jpg" alt="KAFU research publications and academic visibility activities" loading="lazy"/>
-      <div class="pubs-stat-badge">
+    <!-- image10.jpeg + image11.png appear together here in the document -->
+    <div class="two-imgs-row rv">
+      <div class="tir-main">
+        <img src="/images/pubs-event.jpg" alt="KAFU researchers — publications and citation visibility activities" loading="lazy"/>
+      </div>
+      <div class="tir-side">
         <img src="/images/pubs-icon.png" alt="" aria-hidden="true" loading="lazy"/>
-        <div>
-          <span class="psb-num">35</span>
-          <span class="psb-label">Peer-reviewed publications recorded by December 2025</span>
+        <div class="highlight-badge">
+          <span class="hb-num">35</span>
+          <span class="hb-label">Peer-reviewed publications recorded by December 2025</span>
         </div>
       </div>
     </div>
 
-    <!-- Bar chart: image12 icon + image14 chart -->
+    <p class="body-p rv"><strong>HIGHLIGHT:</strong> 35 peer-reviewed publications were recorded by December 2025.</p>
+
+    <!-- image12.png + image14.png appear together here (chart icon + bar chart) -->
     <div class="chart-block rv">
       <div class="cb-head">
         <img src="/images/chart-icon.png" alt="" aria-hidden="true" class="cb-icon" loading="lazy"/>
         <h4>Publications by Research Discipline</h4>
       </div>
       <figure class="chart-fig">
-        <img src="/images/chart-bar.png" alt="Bar chart: KAFU 2025 publications by research discipline — Chemistry and Environmental Science lead, followed by Medicine and Materials Science, with Engineering and Arts & Humanities showing growth opportunity" loading="lazy"/>
-        <figcaption>KAFU's 2025 research output is led by <strong>Chemistry</strong> and <strong>Environmental Science</strong> with strong contributions from <strong>Medicine</strong> and <strong>Materials Science</strong>. Other fields show moderate to steady output, while areas like <strong>Engineering</strong> and <strong>Arts &amp; Humanities</strong> present opportunities for growth. Overall, the data reflects a well-diversified research portfolio with particular strength in science-driven disciplines and growing potential across other fields. Outputs spanned Schools of Science, Business, Health Sciences, Computing, Education and Social Sciences.</figcaption>
+        <img src="/images/chart-bar.png" alt="Bar chart showing KAFU 2025 publications by research discipline: Chemistry and Environmental Science lead, followed by Medicine and Materials Science" loading="lazy"/>
+        <figcaption>According to the graph, KAFU's 2025 research output is led by <strong>Chemistry</strong> and <strong>Environmental Science</strong> with strong contributions from <strong>Medicine</strong> and <strong>Materials Science</strong>. Other fields show moderate to steady output, while areas like <strong>Engineering</strong> and <strong>Arts &amp; Humanities</strong> present opportunities for growth — reflecting a well-diversified research portfolio with particular strength in science-driven disciplines.</figcaption>
       </figure>
     </div>
 
-    <!-- chart2 + chart2-icon -->
+    <p class="body-p rv">Outputs spanned Schools of Science, Business, Health Sciences, Computing, Education and Social Sciences. Strong citation visibility through indexed journals and active Google Scholar profiles contributed to the institution's research impact and global recognition.</p>
+
+    <!-- image15.png + image16.png appear together here (second chart + icon) -->
     <div class="chart-block rv">
       <div class="cb-head">
         <img src="/images/chart2-icon.png" alt="" aria-hidden="true" class="cb-icon" loading="lazy"/>
-        <h4>Research Output Metrics</h4>
+        <h4>Research Output Metrics &amp; Citation Performance</h4>
       </div>
       <figure class="chart-fig">
-        <img src="/images/chart2.png" alt="Research output metrics chart" loading="lazy"/>
-        <figcaption>Strong citation visibility through indexed journals and Google Scholar profiles, contributing to institutional research impact and global visibility.</figcaption>
+        <img src="/images/chart2.png" alt="Research output metrics and citation performance chart across KAFU schools 2025" loading="lazy"/>
+        <figcaption>Additional research output metrics and citation performance across KAFU Schools and departments for 2025.</figcaption>
       </figure>
     </div>
+
+    <!-- Pie chart analysis text appears HERE, before the grants section -->
+    <p class="body-p rv">The pie chart shows that <strong>Shikuku, V.O.</strong> is the leading contributor accounting for over half (56.2%) of the total publications. <strong>Okenwa-Vincent E.E.</strong> follows with 18.8%, while <strong>Manyali, G.S.</strong> and <strong>Ngeno, E.</strong> each contribute 12.5%. This indicates a strong lead by one author with additional support from a smaller group — highlighting both individual excellence and the need to broaden authorship participation across the institution.</p>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
-     05 · GRANTS, FELLOWSHIPS & FUNDING
-     Images: chart-pie.png (author pie - at section intro)
-             portrait-okenwa.jpg (beside AREF fellowship)
-             award-cert.jpg (after TWAS fellowship)
-             grant-doc.jpg (certificate/document)
+     05 · RESEARCH GRANTS, FELLOWSHIPS & FUNDING
+     Doc order:
+       Section heading → intro text → "key achievements were realized:"
+       image17.png → PIE CHART appears here at top of grants section
+       then KES 100M grant text
+       image18.jpeg → Dr. Okenwa portrait (AREF fellowship)
+       ISSBD text
+       TWAS text
+       image19.jpeg → award cert after TWAS
+       summary text
+       image20.png → grant doc certificate
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="grants">
   <div class="wrap">
     <div class="sec-label"><span class="sn">05</span><span class="sl"></span><span class="sk">Grants &amp; Fellowships</span></div>
     <h2 class="sh">Research Grants, Fellowships<br/>&amp; External Funding</h2>
-    <p class="sd">In 2025, DRIO through targeted efforts in identifying funding opportunities, supporting competitive proposal development and facilitating linkages with funding agencies and development partners — enhanced the institution's capacity to attract and manage research resources.</p>
+    <p class="sd">In 2025, DRIO through targeted efforts in identifying funding opportunities, supporting competitive proposal development and facilitating linkages with funding agencies and development partners, enhanced the institution's capacity to attract and manage research resources.</p>
+    <p class="body-p rv">The following key achievements were realized:</p>
 
-    <!-- Pie chart appears here in document (image17) -->
+    <!-- image17.png PIE CHART — appears right here in the document, at the START of grants section -->
     <div class="chart-block rv">
       <div class="cb-head">
         <span class="cb-dot"></span>
         <h4>Author Contribution Distribution — 2025 Publications</h4>
       </div>
       <figure class="chart-fig">
-        <img src="/images/chart-pie.png" alt="Pie chart: Shikuku V.O. 56.2%, Okenwa-Vincent 18.8%, Manyali G.S. 12.5%, Ngeno E. 12.5%" loading="lazy"/>
-        <figcaption>The pie chart shows that <strong>Shikuku, V.O.</strong> is the leading contributor accounting for over half (56.2%) of the total publications. <strong>Okenwa-Vincent E.E.</strong> follows with 18.8%, while <strong>Manyali, G.S.</strong> and <strong>Ngeno, E.</strong> each contribute 12.5%. This indicates a strong lead by one author with additional support from a smaller group — highlighting both excellence and the need to broaden authorship participation.</figcaption>
+        <img src="/images/chart-pie.png" alt="Pie chart: Shikuku V.O. 56.2%, Okenwa-Vincent E.E. 18.8%, Manyali G.S. 12.5%, Ngeno E. 12.5% — author contribution distribution 2025" loading="lazy"/>
+        <figcaption>The pie chart shows that <strong>Shikuku, V.O.</strong> is the leading contributor, accounting for over half (56.2%) of total publications. <strong>Okenwa-Vincent E.E.</strong> contributes 18.8%, while <strong>Manyali G.S.</strong> and <strong>Ngeno E.</strong> each account for 12.5%.</figcaption>
       </figure>
     </div>
 
-    <p class="body-p rv">In 2025, the following key achievements were realized:</p>
-
     <div class="grants-tl">
 
-      <!-- Grant 1: KES 100M -->
+      <!-- GRANT 1: KES 100M -->
       <div class="gt-entry rv">
         <span class="gt-dot"></span>
         <article class="gt-card">
@@ -323,14 +367,13 @@
             <span class="gt-badge">KES 100 Million</span>
           </div>
           <div class="gt-body">
-            <p>In a major milestone for the DRIO, a grant of <strong>KES 100 million</strong> Concept Note (PCN) was approved by the State Department for Higher Education in 2025 to strengthen STEM laboratory equipment across SOHES, SOSCI and SCIT, led by <strong>Dr. Mabonga</strong>. The funding will support the installation of state-of-the-art teaching and research equipment, significantly enhancing laboratory infrastructure and innovation spaces across the institution.</p>
-            <p>This strategic investment is expected to play a transformative role in improving hands-on learning, advancing research output and strengthening institutional readiness for the Competency-Based Education (CBE) cohort expected to join the University in 2029.</p>
+            <p>In a major milestone for the DRIO, a grant of <strong>KES 100 million</strong> Concept Note (PCN) was approved by the State Department for Higher Education in 2025 to strengthen STEM laboratory equipment across SOHES, SOSCI and SCIT, led by <strong>Dr. Mabonga</strong>. The funding will support the installation of state-of-the-art teaching and research equipment, significantly enhancing laboratory infrastructure and innovation spaces across the institution. This strategic investment is expected to play a transformative role in improving hands-on learning, advancing research output and strengthening institutional readiness for the Competency-Based Education (CBE) cohort expected to join the University in 2029.</p>
             <span class="gt-tag">STEM Infrastructure · National Treasury</span>
           </div>
         </article>
       </div>
 
-      <!-- Grant 2: AREF — portrait-okenwa beside text -->
+      <!-- GRANT 2: AREF — image18.jpeg is Dr. Okenwa portrait, placed beside this text -->
       <div class="gt-entry rv rv1">
         <span class="gt-dot"></span>
         <article class="gt-card">
@@ -338,18 +381,18 @@
             <h3>Africa Research Excellence Fund (AREF) Fellowship 2025</h3>
             <span class="gt-badge">Queen's University Belfast, UK</span>
           </div>
-          <div class="gt-body gt-body-with-portrait">
+          <div class="gt-body gt-with-portrait">
+            <!-- image18.jpeg: Dr. Okenwa portrait -->
             <img src="/images/portrait-okenwa.jpg" alt="Dr. Okenwa-Vincent, AREF Fellow 2025" class="gt-portrait" loading="lazy"/>
             <div>
-              <p>Award of the prestigious <strong>2025 AREF Fellowship</strong> to <strong>Dr. Okenwa-Vincent</strong> for the project <em>"Impact of Myopia and its Management on Behavioral and Educational Performance of Kenyan School Children"</em> at the Centre of Public Health, Queen's University Belfast, United Kingdom.</p>
-              <p>This collaboration will enhance his advanced analytical and methodological capacities — skills that he will bring back to strengthen research training, mentorship and evidence-based health policy engagement at KAFU.</p>
-              <span class="gt-tag">Health Research · UK Partnership</span>
+              <p>Award of the prestigious <strong>2025 Africa Research Excellence Fund (AREF) Fellowship</strong> to <strong>Dr. Okenwa-Vincent</strong> for the project <em>"Impact of Myopia and its Management on Behavioral and Educational Performance of Kenyan School Children"</em> at the Centre of Public Health, Queen's University Belfast, United Kingdom. This collaboration will enhance his advanced analytical and methodological capacities — skills that he will bring back to strengthen research training, mentorship and evidence-based health policy engagement at KAFU.</p>
+              <span class="gt-tag">Health Research · UK Partnership · AREF</span>
             </div>
           </div>
         </article>
       </div>
 
-      <!-- Grant 3: ISSBD -->
+      <!-- GRANT 3: ISSBD -->
       <div class="gt-entry rv rv2">
         <span class="gt-dot"></span>
         <article class="gt-card">
@@ -364,7 +407,7 @@
         </article>
       </div>
 
-      <!-- Grant 4: TWAS — award-cert photo after -->
+      <!-- GRANT 4: TWAS — image19.jpeg appears after this grant -->
       <div class="gt-entry rv rv3">
         <span class="gt-dot"></span>
         <article class="gt-card">
@@ -374,105 +417,105 @@
           </div>
           <div class="gt-body">
             <p>Award of a <strong>TWAS Postdoctoral Fellowship</strong> (December 2025) to <strong>Dr. Shikuku</strong> supporting a six-month research visit at CSIR–National Metallurgical Laboratory (India). The proposal <em>"Development of Cu₂O/Ferrite based composite modified waste materials as solar photocatalyst"</em> will foster collaboration and joint research publications between KAFU and CSIR-NML, and provide linkage for instrument access to support postgraduate research at KAFU.</p>
-            <span class="gt-tag">Materials Science · India Partnership</span>
+            <span class="gt-tag">Materials Science · India Partnership · TWAS</span>
           </div>
         </article>
       </div>
 
     </div>
 
-    <!-- Award certificate photo (image19) + grant document (image20) - these appear after grant achievements summary -->
-    <div class="grants-docs rv">
-      <figure class="gd-fig">
-        <img src="/images/award-cert.jpg" alt="KAFU research award and fellowship certificate documentation" loading="lazy"/>
-        <figcaption>Fellowship and grant award documentation</figcaption>
-      </figure>
-      <figure class="gd-fig gd-fig-portrait">
-        <img src="/images/grant-doc.jpg" alt="Official grant concept note and award documentation" loading="lazy"/>
-        <figcaption>Collectively, these achievements significantly enhanced KAFU's research infrastructure, international linkages and grant competitiveness.</figcaption>
-      </figure>
+    <!-- image19.jpeg appears after TWAS grant text — award/certificate photo -->
+    <figure class="wide-fig rv" style="margin-top:2rem;">
+      <img src="/images/award-cert.jpg" alt="KAFU research award and fellowship certificate documentation" loading="lazy"/>
+      <figcaption>Fellowship and award certification documentation — KAFU research achievements 2025</figcaption>
+    </figure>
+
+    <p class="body-p rv">Collectively, these achievements significantly enhanced KAFU's research infrastructure, international linkages and grant competitiveness.</p>
+
+    <!-- image20.png appears here — grant concept note document -->
+    <div class="doc-display rv">
+      <img src="/images/grant-doc.jpg" alt="Grant concept note and official award documentation" loading="lazy"/>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      06 · CONFERENCES, INNOVATION & AWARDS
-     Images: conference-event.jpg (NRF banner)
-             portrait-bonface.jpg (Most Innovative award)
-             portrait-lucy.jpg (Best Youth Research)
-             portrait-linda.jpg (Best Community Engagement)
-             award-ceremony1, award-ceremony2 (paired)
-             portrait-lucy.jpg + portrait-linda.jpg (paired)
-             conference1–4 (conference photos in pairs)
+     Doc order:
+       Section heading
+       image21.jpeg → NRF event photo (appears WITH opening text)
+       Awards subsection heading
+       text about KAFU at NRF
+       "Judge's special recognition" text
+       "Most innovative research idea — BONFACE JIVERI"
+       image22.jpeg → Bonface Jiveri portrait
+       "Best youth research — LUCY MBUGUA"
+       image23.jpeg → Lucy Mbugua photo
+       "Best community engagement — LINDA MAKHAKHA"
+       summary text
+       Conferences subsection
+       CEIL / Murang'a / Busitema text
+       image24.jpeg + image25.jpeg → pair
+       image23.jpeg + image26.jpeg → pair (Lucy + Linda)
+       image27.jpeg + image28.jpeg → pair
+       image29.jpeg + image30.jpeg → pair
 ══════════════════════════════════════════ -->
 <section class="sec sec-cream" id="awards">
   <div class="wrap">
     <div class="sec-label"><span class="sn">06</span><span class="sl"></span><span class="sk">Awards &amp; Recognition</span></div>
     <h2 class="sh">Conferences, Innovation<br/>&amp; Awards</h2>
 
-    <!-- NRF event banner (image21) -->
-    <div class="event-banner rv">
+    <!-- image21.jpeg appears WITH this opening text in the document -->
+    <div class="event-with-text rv">
       <img src="/images/conference-event.jpg" alt="Kenya National Research Festival, Egerton University, August 2025" loading="lazy"/>
-      <div class="eb-overlay">
-        <h3>Kenya National Research Festival<br/><span>Egerton University · 18–22 August 2025</span></h3>
+      <div class="ewt-text">
+        <p>The Kenya National Research Festival held at Egerton University on 22 August 2025 concluded with a strong focus on turning scientific research into practical solutions that benefit communities. Speaking at the closing ceremony, <strong>Principal Secretary Prof. Shaukat Abdulrazak</strong> emphasised that Kenya's development depends on effectively applying research findings to solve societal challenges. He highlighted the importance of collaboration between universities, industry, policymakers, farmers and communities, while stressing that research funding should prioritise measurable results rather than activities alone.</p>
       </div>
-    </div>
-
-    <div class="info-box rv">
-      The Kenya National Research Festival held at Egerton University on 22 August 2025 concluded with a strong focus on turning scientific research into practical solutions that benefit communities. Speaking at the closing ceremony, <strong>Principal Secretary Prof. Shaukat Abdulrazak</strong> emphasised that Kenya's development depends on effectively applying research findings to solve societal challenges. He highlighted the importance of collaboration between universities, industry, policymakers, farmers and communities, while stressing that research funding should prioritise measurable results rather than activities alone.
     </div>
 
     <h3 class="sub-h rv">Awards, Recognition &amp; National Visibility</h3>
-    <p class="body-p rv">KAFU researchers received national recognition and awards for excellence in innovation, youth research and community-engaged scholarship. KAFU participated in the Kenya National Research Festival (18–22 August 2025, Egerton University), organised by the National Research Fund (NRF), where KAFU received multiple recognitions in the presence of <strong>Prof. Fred Amimo, DVC Academics, Student &amp; Research</strong>.</p>
+    <p class="body-p rv">KAFU researchers received national recognition and awards for excellence in innovation, youth research and community-engaged scholarship during the reporting period. KAFU participated in the Kenya National Research Festival (18–22 August 2025, Egerton University), organised by the National Research Fund (NRF), where KAFU received multiple recognitions in the presence of <strong>Prof. Fred Amimo, DVC Academics, Student &amp; Research</strong>:</p>
 
-    <!-- Awards grid — each with photo from document -->
-    <div class="awards-4 rv">
-      <div class="aw-tile">
-        <span class="aw-medal">🥇</span>
-        <p class="aw-cat">Judge's Special Recognition</p>
-        <h4>Kaimosi Friends University</h4>
-        <p class="aw-inst">Institutional Excellence Award</p>
-      </div>
-
-      <!-- Bonface Jiveri — image22 -->
-      <div class="aw-tile">
-        <span class="aw-medal">💡</span>
-        <p class="aw-cat">Most Innovative Research Idea</p>
-        <img src="/images/portrait-bonface.jpg" alt="Bonface Jiveri, Most Innovative Research Idea award winner" class="aw-portrait" loading="lazy"/>
-        <h4>Bonface Jiveri</h4>
-        <p class="aw-inst">KAFU Researcher</p>
-      </div>
-
-      <!-- Lucy Mbugua — image23 -->
-      <div class="aw-tile">
-        <span class="aw-medal">⭐</span>
-        <p class="aw-cat">Best Youth Research (Under 30)</p>
-        <img src="/images/portrait-lucy.jpg" alt="Lucy Mbugua, Best Youth Research award winner" class="aw-portrait" loading="lazy"/>
-        <h4>Lucy Mbugua</h4>
-        <p class="aw-inst">KAFU Student Innovator</p>
-      </div>
-
-      <!-- Linda Makhakha — image26 -->
-      <div class="aw-tile">
-        <span class="aw-medal">🤝</span>
-        <p class="aw-cat">Best Community Engagement Research</p>
-        <img src="/images/portrait-linda.jpg" alt="Linda Makhakha, Best Community Engagement Research award" class="aw-portrait" loading="lazy"/>
-        <h4>Linda Makhakha</h4>
-        <p class="aw-inst">KAFU Researcher</p>
-      </div>
+    <div class="info-box rv">
+      <strong>Judge's Special Recognition Award</strong> – KAIMOSI FRIENDS UNIVERSITY (Institutional Excellence)
     </div>
 
-    <p class="body-p rv" style="margin-top:1.5rem;">These recognitions enhanced the University's profile and affirmed the quality and relevance of its research output. We congratulate our researchers on the outstanding performance.</p>
-
-    <!-- Award ceremony photos (image24+image25 pair, image23+image26 pair) -->
-    <div class="photo-2col rv">
-      <img src="/images/award-ceremony1.jpg" alt="Award ceremony at Kenya National Research Festival" loading="lazy"/>
-      <img src="/images/award-ceremony2.jpg" alt="KAFU team receiving award at NRF" loading="lazy"/>
+    <!-- Most Innovative: BONFACE JIVERI — image22.jpeg portrait beside text -->
+    <div class="award-person-row rv">
+      <div class="apr-text">
+        <p class="apr-cat">💡 Most Innovative Research Idea</p>
+        <h4>Bonface Jiveri (KAFU)</h4>
+        <p>Recognised for the most innovative research idea at the Kenya National Research Festival, demonstrating KAFU's growing strength in research creativity and applied innovation.</p>
+      </div>
+      <img src="/images/portrait-bonface.jpg" alt="Bonface Jiveri, Most Innovative Research Idea award winner at NRF 2025" class="apr-portrait" loading="lazy"/>
     </div>
-    <!-- image23+image26 second pair used again in doc -->
+
+    <!-- Best Youth Research: LUCY MBUGUA — image23.jpeg photo beside text -->
+    <div class="award-person-row rv">
+      <div class="apr-text">
+        <p class="apr-cat">⭐ Best Youth Research (Under 30 years old)</p>
+        <h4>Lucy Mbugua (KAFU)</h4>
+        <p>Awarded Best Youth Research for her Bio Pad innovation — a biodegradable, eco-friendly sanitary solution made from locally available materials. This achievement enhanced the University's profile and affirmed the quality and relevance of KAFU's student-led research output.</p>
+      </div>
+      <img src="/images/portrait-lucy.jpg" alt="Lucy Mbugua, Best Youth Research award winner at NRF 2025" class="apr-portrait" loading="lazy"/>
+    </div>
+
+    <!-- Best Community Engagement: LINDA MAKHAKHA -->
+    <div class="info-box rv">
+      <strong>🤝 Best Community Engagement Research</strong> — <strong>Linda Makhakha (KAFU)</strong><br/>
+      Recognised for outstanding community-engaged research that demonstrated direct and measurable societal impact. We congratulate our researchers on this outstanding performance.
+    </div>
+
+    <!-- image24.jpeg + image25.jpeg (paired in document) — NRF award ceremony photos -->
     <div class="photo-2col rv">
-      <img src="/images/portrait-lucy.jpg" alt="Lucy Mbugua showcasing her Bio Pad innovation" loading="lazy"/>
-      <img src="/images/portrait-linda.jpg" alt="Linda Makhakha community engagement research presentation" loading="lazy"/>
+      <img src="/images/award-ceremony1.jpg" alt="Award ceremony at Kenya National Research Festival 2025" loading="lazy"/>
+      <img src="/images/award-ceremony2.jpg" alt="KAFU team receiving award at Kenya National Research Festival" loading="lazy"/>
+    </div>
+
+    <!-- image23.jpeg + image26.jpeg (paired in document) — Lucy + Linda -->
+    <div class="photo-2col rv">
+      <img src="/images/portrait-lucy.jpg"  alt="Lucy Mbugua with her Bio Pad innovation" loading="lazy"/>
+      <img src="/images/portrait-linda.jpg" alt="Linda Makhakha community engagement research" loading="lazy"/>
     </div>
 
     <div class="info-box rv">
@@ -480,14 +523,14 @@
     </div>
 
     <h3 class="sub-h rv">Conferences, Dissemination &amp; Scholarly Engagement</h3>
-    <p class="body-p rv">The Directorate actively promoted and disseminated research findings through conferences, exhibitions and symposia as key pathways for knowledge exchange and visibility. The Directorate supported staff and students in participating in local and international conferences, presenting research findings and engaging with academic and industry stakeholders.</p>
+    <p class="body-p rv">The Directorate actively promoted and disseminated research findings through conferences, exhibitions and symposia as key pathways for knowledge exchange and visibility. The Directorate supported staff and students in participating in local and international conferences, presenting research findings and engaging with academic and industry stakeholders. KAFU was represented at the following conferences and events:</p>
 
     <div class="conf-table rv">
       <div class="conf-row">
         <div class="conf-date"><span class="cd-m">Sept</span><span class="cd-y">2025</span></div>
         <div class="conf-body">
           <h4>Commercialisation &amp; Entrepreneurial Institutions Leaders' (CEIL) Summit 2025</h4>
-          <p>Mombasa, Kenya — Innovation and industry commercialisation focus</p>
+          <p>Mombasa, Kenya — Innovation, industry engagement and commercialisation of research</p>
         </div>
       </div>
       <div class="conf-row">
@@ -500,49 +543,53 @@
       <div class="conf-row">
         <div class="conf-date"><span class="cd-m">Oct</span><span class="cd-y">2025</span></div>
         <div class="conf-body">
-          <h4>3rd Busitema University Science, Technology and Innovation Symposium</h4>
-          <p>Busitema, Uganda — Mental health modelling and interdisciplinary research</p>
+          <h4>3rd Busitema University Science, Technology and Innovation Symposium (October 2025, Uganda)</h4>
+          <p>Mental health modelling and interdisciplinary research presentations</p>
         </div>
       </div>
     </div>
 
-    <!-- Conference photos in document order: image27+image28, image29+image30 -->
+    <!-- image27.jpeg + image28.jpeg (paired in document) -->
     <div class="photo-2col rv" style="margin-top:1.5rem;">
-      <img src="/images/conference1.jpg" alt="KAFU staff presenting at national conference" loading="lazy"/>
-      <img src="/images/conference2.jpg" alt="Research dissemination at scholarly symposium" loading="lazy"/>
+      <img src="/images/conference1.jpg" alt="KAFU researchers presenting at the CEIL Summit 2025" loading="lazy"/>
+      <img src="/images/conference2.jpg" alt="Research dissemination at Murang'a University International Conference" loading="lazy"/>
     </div>
+
+    <!-- image29.jpeg + image30.jpeg (paired in document) -->
     <div class="photo-2col rv">
-      <img src="/images/conference3.jpg" alt="KAFU researchers at international conference" loading="lazy"/>
-      <img src="/images/conference4.jpg" alt="Scholarly engagement and knowledge exchange" loading="lazy"/>
+      <img src="/images/conference3.jpg" alt="KAFU at Busitema University Science, Technology and Innovation Symposium" loading="lazy"/>
+      <img src="/images/conference4.jpg" alt="Scholarly engagement and knowledge exchange at international conference" loading="lazy"/>
     </div>
+
+    <p class="body-p rv">These engagements strengthened research visibility, stakeholder interaction and student innovation culture at KAFU.</p>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      07 · FIRST KAFU SCIENCE FAIR & OPEN DAY
-     Images: themes-wide.jpg appears here first (image31 = wide KAFU photo in Themes section header)
-             — in Science Fair: no wide banner, editorial layout
-             citizen-science1.jpg + citizen-science2.jpg (citizen science)
+     Doc: text describing event → Science Fair awards list
+          image24.jpeg + image25.jpeg (already used above, repeated here as in doc)
+          image23.jpeg + image26.jpeg (already used above, repeated here as in doc)
+          image27.jpeg + image28.jpeg (conference photos continue here in doc)
+          image29.jpeg + image30.jpeg
+     Note: Science Fair section uses SAME photos as conference section (document uses them twice)
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="sciencefair">
   <div class="wrap">
     <div class="sec-label"><span class="sn">07</span><span class="sl"></span><span class="sk">Science Fair &amp; Open Day</span></div>
     <h2 class="sh">First KAFU Science Fair<br/>&amp; Open Day</h2>
-    <p class="sd">8 August 2025 — A landmark milestone in KAFU's commitment to promoting science, innovation and public engagement.</p>
 
-    <p class="body-p rv">On <strong>8 August 2025</strong>, the University successfully hosted its inaugural KAFU Science Fair and Open Day, marking a significant milestone in the University's efforts to promote science, innovation and public engagement. The event provided a dynamic platform for students, researchers and innovators to showcase their projects, exchange ideas and engage with industry partners, schools and the wider community. It also highlighted the University's growing capacity in applied research and innovation, while strengthening its visibility as a centre for scientific excellence and community-oriented solutions.</p>
+    <p class="body-p rv">In addition, on <strong>8 August 2025</strong> the University successfully hosted its inaugural KAFU Science Fair and Open Day, marking a significant milestone in the University's efforts to promote science, innovation and public engagement. The event provided a dynamic platform for students, researchers and innovators to showcase their projects, exchange ideas and engage with industry partners, schools and the wider community. It also highlighted the University's growing capacity in applied research and innovation, while strengthening its visibility as a centre for scientific excellence and community-oriented solutions.</p>
 
-    <p class="body-p rv">The chief guest <strong>Prof. F. Orata</strong>, the Director of Research at Masinde Muliro University of Science and Technology (MMUST), gave the keynote address. The fair concluded with an awards ceremony recognising outstanding projects.</p>
+    <p class="body-p rv">The chief guest <strong>Prof. F. Orata</strong>, the Director of Research at Masinde Muliro University of Science and Technology (MMUST), gave the keynote address. The fair concluded with an awards ceremony recognising outstanding student projects:</p>
 
-    <!-- Science Fair awards with photos exactly as in document -->
-    <div class="fair-awards-layout">
-      <div class="fa-list rv">
+    <!-- Science Fair awards layout: text + paired photos as they appear in document -->
+    <div class="fair-layout rv">
+      <div class="fair-awards-list">
         <h3>Science Fair Awards</h3>
-
         <div class="fa-item">
           <p class="fa-cat">🥇 Best Poster</p>
-          <h4>Yohana Obiye</h4>
-          <p>Online Voting System</p>
+          <h4>Yohana Obiye — Online Voting System</h4>
         </div>
         <div class="fa-item">
           <p class="fa-cat">🥈 Runners-Up</p>
@@ -551,44 +598,43 @@
         </div>
         <div class="fa-item">
           <p class="fa-cat">💡 Best Innovation</p>
-          <h4>Lucy Mbugua</h4>
-          <p>Bio Pad — a practical and human-centered invention</p>
+          <h4>Lucy Mbugua — Bio Pad</h4>
+          <p>A practical and human-centered invention</p>
         </div>
         <div class="fa-item">
           <p class="fa-cat">🤖 AI Showcase</p>
           <h4>Brian Saitabau</h4>
           <p>AI Chatbot designed to improve access to information about the university</p>
         </div>
-
-        <p class="body-p" style="margin-top:1rem;font-size:13px;">These engagements strengthened research visibility, stakeholder interaction and student innovation culture at KAFU.</p>
       </div>
 
-      <!-- Award ceremony photos from Science Fair section (image24+image25 pairs as in doc) -->
-      <div class="fa-photos rv rv1">
-        <img src="/images/award-ceremony1.jpg" alt="KAFU Science Fair award ceremony" loading="lazy"/>
-        <img src="/images/award-ceremony2.jpg" alt="Students receiving Science Fair awards" loading="lazy"/>
+      <!-- image24.jpeg + image25.jpeg (Science Fair photos — document uses them in this section too) -->
+      <div class="fair-photos">
+        <img src="/images/award-ceremony1.jpg" alt="KAFU Science Fair — award ceremony and student project presentations" loading="lazy"/>
+        <img src="/images/award-ceremony2.jpg" alt="KAFU Science Fair — student innovations showcase" loading="lazy"/>
       </div>
+    </div>
+
+    <!-- image23.jpeg + image26.jpeg repeated as they appear in document under Science Fair -->
+    <div class="photo-2col rv">
+      <img src="/images/portrait-lucy.jpg"  alt="Lucy Mbugua receiving Best Innovation award at KAFU Science Fair" loading="lazy"/>
+      <img src="/images/portrait-linda.jpg" alt="KAFU Science Fair community engagement showcase" loading="lazy"/>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      08 · INNOVATION, IP & COMMERCIALISATION
-     Images: grant-doc.jpg (second occurrence - image20 appears again)
-             examflow-event.jpg (image46 - ExamFlow section)
+     Doc: Innovation text → bullet list with 2 innovations
+          image20.png (second occurrence — same grant doc certificate) appears here
 ══════════════════════════════════════════ -->
 <section class="sec sec-cream" id="ip">
   <div class="wrap">
     <div class="sec-label"><span class="sn">08</span><span class="sl"></span><span class="sk">Innovation &amp; IP</span></div>
     <h2 class="sh">Innovation, Intellectual Property<br/>&amp; Commercialisation</h2>
-    <p class="sd">Innovation remained a key focus area throughout 2025, supported by DRIO. Two technology innovations were successfully registered for intellectual property protection — a landmark step for KAFU's innovation ecosystem.</p>
 
-    <p class="body-p rv">Key milestones achieved during the year included: Initiation of copyright processes for digital innovations. As a result, two technology innovations were successfully registered for intellectual property protection, namely the <strong>KAFU Online Voting System</strong> and the <strong>ExamFlow Management System</strong>, both by Mr. Yohana Obiye, Dr. Hillan Ronoh and Prof. Remmy Shiundu.</p>
-
-    <!-- grant-doc appears here (image20 second occurrence) -->
-    <div class="ip-doc-row rv">
-      <img src="/images/grant-doc.jpg" alt="Intellectual property registration and innovation documentation" loading="lazy"/>
-    </div>
+    <p class="body-p rv">Innovation remained a key focus area throughout 2025, supported by DRIO.</p>
+    <p class="body-p rv">Key milestones achieved during the year included: Initiation of copyright processes for digital innovations. As a result, two technology innovations were successfully registered for intellectual property protection:</p>
 
     <div class="ip-cards">
       <div class="ip-card rv">
@@ -611,22 +657,25 @@
       </div>
     </div>
 
-    <!-- ExamFlow wide event photo (image46) -->
-    <figure class="wide-fig rv" style="margin-top:2rem;">
-      <img src="/images/examflow-event.jpg" alt="ExamFlow Management System demonstration and KAFU innovation event" loading="lazy"/>
-      <figcaption>ExamFlow Management System — innovation in academic administration at Kaimosi Friends University</figcaption>
-    </figure>
+    <p class="body-p rv">Sensitisation activities on innovation disclosure and commercialisation, organised by KIPI, were conducted across the year and researchers are encouraged to attend such initiatives.</p>
 
-    <div class="info-box rv" style="margin-top:1.5rem;">
-      Sensitisation activities on <strong>innovation disclosure and commercialisation</strong>, organised by KIPI, were conducted across the year. Researchers are encouraged to attend such initiatives and disclose their innovations to DRIO for appropriate IP protection and commercialisation support.
+    <!-- image20.png (second occurrence in doc) — certificate/document photo -->
+    <div class="doc-display rv">
+      <img src="/images/grant-doc.jpg" alt="Intellectual property registration certificate and innovation documentation" loading="lazy"/>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      09 · COLLABORATIONS, THEMES & OUTLOOK
-     Images: themes-wide.jpg (image31 - wide photo with themes)
-             citizen-science1.jpg + citizen-science2.jpg (Citizen Science project)
+     Doc order:
+       Proposals text (28 proposals)
+       KAFU Priority Research Themes heading + text
+       image31.png → wide KAFU photo here (before theme list)
+       7 theme bullets
+       Citizen Science text
+       image32.jpeg + image33.jpeg → Citizen Science project photos (paired)
+       continuation of citizen science text
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="themes">
   <div class="wrap">
@@ -640,16 +689,17 @@
       <span class="ph-n">28</span>
       <div class="ph-t">
         <h3>Proposals Submitted for Internal Funding in 2025</h3>
-        <p>Strategic collaborations were expanded with government ministries and agencies, international universities and institutes, non-governmental organisations (NGOs) and private sector partners — in efforts to develop proposals and bid for research funding. In 2026, we look forward to more strategic partnerships to support joint proposal development, research supervision, innovation scaling and community outreach initiatives.</p>
+        <p>Strategic collaborations were expanded with government ministries and agencies, international universities and institutes, non-governmental organisations (NGOs) and private sector partners — in efforts to develop proposals and bid for research funding.</p>
+        <p style="margin-top:0.5rem;">In 2026, we look forward to more strategic partnerships to support joint proposal development, research supervision, innovation scaling and community outreach initiatives.</p>
       </div>
     </div>
 
     <h3 class="sub-h rv">KAFU Priority Research Themes</h3>
     <p class="body-p rv">KAFU-DRIO has identified a set of Priority Research Themes that reflect its commitment to addressing pressing societal challenges while advancing knowledge, innovation and sustainable development. These thematic areas are strategically aligned with national development goals and global priorities, providing a multidisciplinary framework for impactful research, collaboration and knowledge generation.</p>
 
-    <!-- Wide KAFU photo (image31) that accompanies the themes section -->
+    <!-- image31.png appears HERE in document — wide KAFU photo, before the theme list -->
     <figure class="wide-fig rv">
-      <img src="/images/themes-wide.jpg" alt="KAFU campus and research community — illustrating DRIO's priority research themes" loading="lazy"/>
+      <img src="/images/themes-wide.jpg" alt="Kaimosi Friends University campus and research community — DRIO priority research themes" loading="lazy"/>
     </figure>
 
     <div class="themes-grid rv">
@@ -662,13 +712,13 @@
       <div class="th-tile"><span>📈</span><h4>Entrepreneurship, Trade &amp; Sustainable Development</h4></div>
     </div>
 
-    <!-- Citizen Science Spotlight — image32 + image33 -->
+    <!-- CITIZEN SCIENCE SPOTLIGHT -->
     <div class="citizen-spot rv">
       <div class="cs-text">
-        <span class="cs-badge">🌿 Spotlight Initiative · Environment Theme</span>
+        <span class="cs-badge">🌿 Spotlight — Environment Theme</span>
         <h3>KAFU Citizen Science Project — Kaimosi Forest</h3>
-        <p>In 2025, under the Environment, Climate Change and Natural Resource Management theme, <strong>Professor Manyali</strong> founded and now leads the KAFU Citizen Science Project, launched in partnership with the <strong>Center for International Forestry Research (CIFOR)</strong> and <strong>World Agroforestry (ICRAF)</strong> — a pioneering initiative that empowers local communities to participate directly in scientific research and environmental stewardship. The project exemplifies how universities can democratise science, moving it beyond academic labs into the hands of citizens, particularly in biodiversity hotspots like Kaimosi Forest.</p>
-        <h4>Core Objectives</h4>
+        <p>In 2025 under the Environment, Climate Change and Natural Resource Management theme, <strong>Professor Manyali</strong> founded and now leads the KAFU Citizen Science Project, launched in partnership with the <strong>Center for International Forestry Research (CIFOR)</strong> and <strong>World Agroforestry (ICRAF)</strong> — a pioneering initiative that empowers local communities to participate directly in scientific research and environmental stewardship.</p>
+        <h4>Core Objectives:</h4>
         <ul class="cs-obj">
           <li>Integrate traditional ecological knowledge with modern scientific tools for forest monitoring and protection</li>
           <li>Combat biodiversity loss while supporting livelihoods dependent on the forest</li>
@@ -676,157 +726,158 @@
           <li>Inform evidence-based policies for sustainable forest management</li>
         </ul>
         <p>The project employs a co-created citizen science model that is accessible, culturally sensitive and technologically appropriate. Communities share generational knowledge of the forest's ecological and cultural significance during structured discussions and validation workshops. Simple mobile apps enable participants — including non-literate community members and Tiriki elders — to track biodiversity, record observations on tree health, wildlife and encroachment, and contribute real-time data.</p>
-        <p>The project has demonstrated the effectiveness of citizen science in promoting sustainable forest conservation. Communities have collaboratively developed practical solutions such as sustainable harvesting and agroforestry to address deforestation. The initiative successfully integrates indigenous knowledge with scientific research, creating a community-driven framework for long-term conservation.</p>
       </div>
-
-      <!-- citizen-science1 + citizen-science2 in document appear alongside this text -->
+      <!-- image32.jpeg + image33.jpeg appear here together — Citizen Science project photos -->
       <div class="cs-photos">
-        <img src="/images/citizen-science1.jpg" alt="KAFU Citizen Science Project — community engagement at Kaimosi Forest" loading="lazy"/>
-        <img src="/images/citizen-science2.jpg" alt="KAFU and CIFOR partnership — citizen science activities at Kaimosi Forest" loading="lazy"/>
+        <img src="/images/citizen-science1.jpg" alt="KAFU Citizen Science Project — community engagement and forest monitoring at Kaimosi" loading="lazy"/>
+        <img src="/images/citizen-science2.jpg" alt="KAFU Citizen Science Project — CIFOR and ICRAF partnership activities at Kaimosi Forest" loading="lazy"/>
       </div>
     </div>
+
+    <p class="body-p rv">The project has demonstrated the effectiveness of citizen science in promoting sustainable forest conservation. Communities have collaboratively developed practical solutions such as sustainable harvesting and agroforestry to address deforestation. The initiative successfully integrates indigenous knowledge with scientific research, creating a community-driven framework for long-term conservation.</p>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      10 · STUDENTS CORNER
-     Images: students-banner.jpg (image34 - wide banner)
-             mediremind: mediremind-photo.jpg + mediremind-icon.jpg (image35+image36)
-             voting: voting-event.jpg (image38) + tiny icon (image37 ignored)
-             biopads: biopads-student.jpg (image39) + biopads-photo1/2/3 (image40/41/42)
-             chatbot: chatbot-student.jpg + chatbot-photo1/2 (image43/44/45)
+     Doc order:
+       Section heading + intro text
+       image34.png → wide Students Corner banner photo
+       intro paragraph "The following are some of the impactful projects"
+       MediRemind: text → image35.png + image36.png (paired) → image37.png (tiny icon)
+       Voting System: text → image38.jpeg + image39.png + image40.png (trio)
+       Bio Pads: text → image41.png + image42.png (paired)
+       AI Chatbot: text → image43.png + image44.jpeg + image45.jpeg (trio)
+       ExamFlow: text → image46.png (wide event photo)
+       Graduation Lifecycle: text only
 ══════════════════════════════════════════ -->
 <section class="sec sec-cream" id="students">
   <div class="wrap">
     <div class="sec-label"><span class="sn">10</span><span class="sl"></span><span class="sk">Students Corner</span></div>
     <h2 class="sh">Students Corner</h2>
 
-    <!-- Wide banner image (image34) -->
+    <!-- image34.png — wide Students banner appears right after section heading -->
     <figure class="wide-fig rv" style="margin-bottom:2rem;">
-      <img src="/images/students-banner.jpg" alt="KAFU students showcasing innovations at the Science Fair and Innovation Hub" loading="lazy"/>
+      <img src="/images/students-banner.jpg" alt="KAFU students showcasing innovations — Science Fair and Innovation Hub" loading="lazy"/>
     </figure>
 
     <p class="body-p rv">KAFU students are not only learners — they are problem-solvers, innovators and community change-makers. Through research and innovation, students are actively engaged in diverse projects spanning digital technology, health, agriculture and environmental sustainability. Through platforms such as the Science Fair and Innovation Hub, these projects demonstrate practical, community-driven solutions that align with national development priorities and global challenges.</p>
 
     <p class="body-p rv">The following are some of the impactful projects developed by students:</p>
 
-    <!-- PROJECT 1: MediRemind — image35 + image36 -->
+    <!-- PROJECT 1: MediRemind
+         image35.png + image36.png appear AFTER MediRemind text
+         image37.png (tiny icon) appears alone after that -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>💊 MediRemind System</h3>
         <span class="pc-tag">Health Tech</span>
       </div>
       <p class="pc-by">Developed by: <strong>Dennis Wafula</strong> (BSc Computer Science, Year 4)</p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Poor medication adherence among patients in rural and low-connectivity areas leads to worsening health outcomes.</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A mobile-based SMS and WhatsApp reminder system that alerts patients to take medication on time, even in low internet environments.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Improved treatment compliance, reduced hospital readmissions and enhanced healthcare accessibility in underserved communities.</p></div>
-        </div>
-        <!-- image35 + image36 beside MediRemind -->
-        <div class="pc-photos">
-          <img src="/images/mediremind-photo.jpg" alt="MediRemind system demonstration" loading="lazy"/>
-          <img src="/images/mediremind-icon.jpg" alt="MediRemind application interface" loading="lazy"/>
-        </div>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Poor medication adherence among patients in rural and low-connectivity areas leads to worsening health outcomes.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A mobile-based SMS and WhatsApp reminder system that alerts patients to take medication on time, even in low internet environments.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Improved treatment compliance, reduced hospital readmissions and enhanced healthcare accessibility in underserved communities.</p></div>
+      </div>
+      <!-- image35.png + image36.png appear here, paired after MediRemind text -->
+      <div class="pc-photos-2">
+        <img src="/images/mediremind-photo.jpg" alt="MediRemind System — mobile health reminder application demonstration" loading="lazy"/>
+        <img src="/images/mediremind-icon.jpg"  alt="MediRemind application interface and project display" loading="lazy"/>
       </div>
     </article>
 
-    <!-- PROJECT 2: Voting System — image38 + image39 + image40 -->
+    <!-- PROJECT 2: KAFU Online Voting System
+         image38.jpeg + image39.png + image40.png appear together after text (trio) -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>🗳️ KAFU Online Voting System</h3>
         <span class="pc-tag">Civic Tech · IP Registered</span>
       </div>
       <p class="pc-by">Developed by: <strong>Yohana Obiye</strong> · Best Poster, KAFU Science Fair 2025</p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Lack of transparency, inefficiency and manipulation in manual voting systems (especially student elections).</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A secure digital voting platform that enables transparent, real-time and tamper-proof elections. Successfully IP-registered.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Promotes democratic participation, accountability and trust in institutional governance processes.</p></div>
-        </div>
-        <!-- image38 wide + image39 portrait + image40 -->
-        <div class="pc-photos pc-photos-voting">
-          <img src="/images/voting-event.jpg" alt="KAFU Online Voting System demonstration event" loading="lazy"/>
-          <div class="pc-photos-sub">
-            <img src="/images/biopads-student.jpg" alt="Student project showcase at Science Fair" loading="lazy"/>
-            <img src="/images/biopads-photo1.jpg" alt="Innovation display at KAFU Science Fair" loading="lazy"/>
-          </div>
-        </div>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Lack of transparency, inefficiency and manipulation in manual voting systems, especially student elections.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A secure digital voting platform that enables transparent, real-time and tamper-proof elections. Successfully IP-registered.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Promotes democratic participation, accountability and trust in institutional governance processes.</p></div>
+      </div>
+      <!-- image38.jpeg + image39.png + image40.png trio appears here -->
+      <div class="pc-photos-3">
+        <img src="/images/voting-event.jpg"    alt="KAFU Online Voting System — campus event and demonstration" loading="lazy"/>
+        <img src="/images/biopads-student.jpg" alt="Student project showcase at KAFU Science Fair" loading="lazy"/>
+        <img src="/images/biopads-photo1.jpg"  alt="Innovation display at KAFU Science Fair event" loading="lazy"/>
       </div>
     </article>
 
-    <!-- PROJECT 3: Bio Pads — image41 + image42 -->
+    <!-- PROJECT 3: Bio Pads
+         image41.png + image42.png appear here after Bio Pads text (paired) -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>🌿 Bio Pads — Eco-Friendly Sanitary Solution</h3>
         <span class="pc-tag">Health · Environment</span>
       </div>
-      <p class="pc-by">Developed by: <strong>Lucy Mbugua</strong> · Best Innovation, Science Fair 2025 · Best Youth Research, NRF 2025</p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Limited access to affordable sanitary products and environmental pollution from synthetic pads.</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>Biodegradable sanitary pads made from locally available materials — an eco-friendly and affordable solution.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Improved menstrual hygiene, reduced school absenteeism among girls and minimized environmental waste.</p></div>
-        </div>
-        <!-- image41 + image42 -->
-        <div class="pc-photos">
-          <img src="/images/biopads-photo2.jpg" alt="Bio Pads eco-friendly sanitary solution by Lucy Mbugua" loading="lazy"/>
-          <img src="/images/biopads-photo3.jpg" alt="Bio Pads product — biodegradable sanitary pads" loading="lazy"/>
-        </div>
+      <p class="pc-by">Developed by: <strong>Lucy Mbugua</strong> · Best Innovation, KAFU Science Fair 2025 · Best Youth Research, NRF 2025</p>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Limited access to affordable sanitary products and environmental pollution from synthetic pads.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>Biodegradable sanitary pads made from locally available materials — an eco-friendly and affordable solution.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Improved menstrual hygiene, reduced school absenteeism among girls and minimized environmental waste.</p></div>
+      </div>
+      <!-- image41.png + image42.png paired here -->
+      <div class="pc-photos-2">
+        <img src="/images/biopads-photo2.jpg" alt="Bio Pads — eco-friendly biodegradable sanitary pads by Lucy Mbugua" loading="lazy"/>
+        <img src="/images/biopads-photo3.jpg" alt="Bio Pads product — sustainable materials and production process" loading="lazy"/>
       </div>
     </article>
 
-    <!-- PROJECT 4: AI Chatbot — image43 + image44 + image45 -->
+    <!-- PROJECT 4: AI Chatbot
+         image43.png + image44.jpeg + image45.jpeg trio appears here -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>🤖 AI Chatbot for Student Support</h3>
         <span class="pc-tag">AI · EdTech</span>
       </div>
       <p class="pc-by">Developed by: <strong>Brian Saitabau</strong> · AI Showcase, KAFU Science Fair 2025</p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Limited access to timely information about university services and academic processes.</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>An AI-powered chatbot that provides instant responses to student queries about university information and services.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Enhances access to information, reduces administrative workload and improves student experience.</p></div>
-        </div>
-        <!-- image43 portrait + image44 + image45 -->
-        <div class="pc-photos pc-photos-3">
-          <img src="/images/chatbot-student.jpg" alt="Brian Saitabau with AI Chatbot project" loading="lazy"/>
-          <img src="/images/chatbot-photo1.jpg" alt="AI Chatbot demonstration" loading="lazy"/>
-          <img src="/images/chatbot-photo2.jpg" alt="AI Chatbot student support system" loading="lazy"/>
-        </div>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Limited access to timely information about university services and academic processes.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>An AI-powered chatbot that provides instant responses to student queries about university information and services.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Enhances access to information, reduces administrative workload and improves the overall student experience.</p></div>
+      </div>
+      <!-- image43.png + image44.jpeg + image45.jpeg trio appears here -->
+      <div class="pc-photos-3">
+        <img src="/images/chatbot-student.jpg"  alt="Brian Saitabau with the AI Chatbot project at KAFU Science Fair" loading="lazy"/>
+        <img src="/images/chatbot-photo1.jpg"   alt="AI Chatbot for Student Support — demonstration and interface" loading="lazy"/>
+        <img src="/images/chatbot-photo2.jpg"   alt="AI Chatbot — student support and information access system" loading="lazy"/>
       </div>
     </article>
 
-    <!-- PROJECT 5: ExamFlow -->
+    <!-- PROJECT 5: ExamFlow
+         image46.png (wide event photo) appears after ExamFlow text -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>📝 ExamFlow Management System</h3>
         <span class="pc-tag">EdTech · IP Registered</span>
       </div>
       <p class="pc-by">Developed by: <strong>Yohana Obiye, Remmy Shiundu and Hillan Ronoh</strong></p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Inefficient exam processing, tracking and management in universities.</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A digital system for managing exam workflows, results processing and records. Fully IP-registered.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Streamlines academic administration, reduces errors and improves efficiency in higher education systems.</p></div>
-        </div>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Inefficient exam processing, tracking and management in universities.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A digital system for managing exam workflows, results processing and academic records. Fully IP-registered.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Streamlines academic administration, reduces errors and improves efficiency in higher education systems.</p></div>
       </div>
+      <!-- image46.png wide event photo appears here after ExamFlow text -->
+      <figure class="pc-wide-img">
+        <img src="/images/examflow-event.jpg" alt="ExamFlow Management System — KAFU innovation in academic administration" loading="lazy"/>
+      </figure>
     </article>
 
-    <!-- PROJECT 6: Graduation Lifecycle -->
+    <!-- PROJECT 6: Graduation Lifecycle Management -->
     <article class="proj-card rv">
       <div class="pc-head">
         <h3>🎓 Integrated Graduation Lifecycle Management System</h3>
         <span class="pc-tag">Admin Tech</span>
       </div>
       <p class="pc-by">Developed by: <strong>Yohana Obiye, Kelvin Omieno and Victor Shikuku</strong></p>
-      <div class="pc-body">
-        <div class="pc-cols">
-          <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Complex and inefficient graduation clearance and certification processes.</p></div>
-          <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A centralised system that manages the entire graduation lifecycle — from clearance to certification.</p></div>
-          <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Faster graduation processes, improved student satisfaction and reduced administrative bottlenecks.</p></div>
-        </div>
+      <div class="pc-cols">
+        <div class="pc-detail"><p class="pd-l">Problem Addressed</p><p>Complex and inefficient graduation clearance and certification processes.</p></div>
+        <div class="pc-detail"><p class="pd-l">Solution &amp; Innovation</p><p>A centralised system that manages the entire graduation lifecycle — from clearance to certification.</p></div>
+        <div class="pc-detail"><p class="pd-l">Community Impact</p><p>Faster graduation processes, improved student satisfaction and reduced administrative bottlenecks.</p></div>
       </div>
     </article>
 
@@ -834,7 +885,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     11 · OUTLOOK 2026-2027
+     11 · OUTLOOK & STRATEGIC FOCUS 2026–2027
 ══════════════════════════════════════════ -->
 <section class="sec sec-white" id="outlook">
   <div class="wrap">
@@ -848,7 +899,7 @@
       <cite>— DRIO Strategic Focus 2026–2027</cite>
     </blockquote>
 
-    <h3 class="sub-h rv">Focus Areas</h3>
+    <h3 class="sub-h rv">Strategic Focus Areas</h3>
     <div class="outlook-grid rv">
       <div class="ol-card"><span>💰</span><p>Increased success in large-scale and multi-partner research grants</p></div>
       <div class="ol-card"><span>🌐</span><p>Strengthening international research consortia and networks</p></div>
@@ -860,11 +911,10 @@
   </div>
 </section>
 
-<!-- APPRECIATION + CTA — appreciation-wide.jpg (image47) -->
+<!-- APPRECIATION — image47.png at very end of document -->
 <section class="cta-sec">
-  <!-- Full-width appreciation photo (image47 - final wide photo) -->
   <div class="appreciation-photo">
-    <img src="/images/appreciation-wide.jpg" alt="Kaimosi Friends University — DRIO appreciation and community" loading="lazy"/>
+    <img src="/images/appreciation-wide.jpg" alt="Kaimosi Friends University community — DRIO appreciation" loading="lazy"/>
   </div>
   <div class="cta-content">
     <p class="cta-kicker">Appreciation &amp; Call to Action</p>
@@ -873,7 +923,7 @@
     <div class="cta-btns">
       <a href="mailto:drio@kafu.ac.ke" class="btn-primary">Submit a Proposal</a>
       <a href="mailto:drio@kafu.ac.ke" class="btn-outline">Disclose an Innovation</a>
-      <a href="#themes" class="btn-outline">Join a Research Theme</a>
+      <a href="#themes"                class="btn-outline">Join a Research Theme</a>
       <a href="mailto:drio@kafu.ac.ke" class="btn-outline">Partner with DRIO</a>
     </div>
   </div>
